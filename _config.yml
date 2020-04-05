@@ -142,7 +142,7 @@ utterances:
 collections:
   pages:
     output: true
-    permalink: /:path/
+    permalink: /:path
 
 # --- Misc --- #
 
