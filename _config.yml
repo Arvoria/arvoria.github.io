@@ -139,6 +139,10 @@ utterances:
   theme: github-light # Utterances theme
   label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 # --- Misc --- #
 
