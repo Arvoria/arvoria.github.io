@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Arvorian Industries Information Site
+title: Arvorian Industries
 
 # Short description of your site
 description: Information site used for all Arvorian Industries related documentation and guidelines
@@ -20,7 +20,6 @@ description: Information site used for all Arvorian Industries related documenta
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "about"
   Guidelines: "guidelines"
   Projects: "projects"
 
@@ -65,11 +64,11 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
-  # email: "someone@example.com"
-  # facebook: deanattali
-  github: Arvoria
-  # twitter: daattali
+# rss: true
+# email: "someone@example.com"
+# facebook: deanattali
+# github: Arvoria
+# twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
