@@ -1,26 +1,26 @@
-#navgoco #navgoco .nav, #navgoco .nav ul, #navgoco .nav li {
+#navgoco #navgoco .nav, #navgoco ul, #navgoco li {
     list-style: none;
 }
 
-#navgoco .nav ul {
+#navgoco ul {
     padding: 0;
     margin: 0 0 0 18px;
 }
 
-#navgoco .nav {
+#navgoco {
     padding: 4px;
     margin: 0px;
 }
 
-#navgoco .nav > li {
+#navgoco > li {
     margin: 4px 0;
 }
 
-#navgoco .nav > li li {
+#navgoco > li li {
     margin: 2px 0;
 }
 
-#navgoco .nav a {
+#navgoco a {
     color: #333;
     display: block;
     outline: none;
@@ -30,39 +30,39 @@
     text-decoration: none;
 }
 
-#navgoco .nav li > a > span {
+#navgoco li > a > span {
     float: right;
     font-size: 19px;
     font-weight: bolder;
 }
 
-#navgoco .nav li > a:hover > span {
+#navgoco li > a:hover > span {
     color: #fff;
 }
 
-#navgoco .nav li > a > span:after {
+#navgoco li > a > span:after {
     content: '\25be';
 }
-#navgoco .nav li.open > a > span:after {
+#navgoco li.open > a > span:after {
     content: '\25b4';
 }
 
-#navgoco .nav a:hover, #navgoco .nav li.active > a {
+#navgoco a:hover, #navgoco li.active > a {
     background-color: #5D5D5D;
     color: #f5f5f5;
 }
 
-#navgoco .nav > li.active > a  {
+#navgoco > li.active > a  {
     background-color: #4D90FE;
 }
 
-#navgoco .nav li a {
+#navgoco li a {
     font-size: 12px;
     line-height: 18px;
     padding: 2px 10px;
 }
 
-#navgoco .nav > li > a {
+#navgoco > li > a {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px;
