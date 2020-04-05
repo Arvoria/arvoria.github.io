@@ -34,27 +34,27 @@ It can also be centered!
 Here's a code chunk:
 
 ~~~
-var foo = function(x) {
-  return(x + 5);
-}
+local function foo(x)
+  return x + 5
+end
 foo(3)
 ~~~
 
 And here is the same code with syntax highlighting:
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
+```lua
+local function foo(x)
+  return x + 5
+end
 foo(3)
 ```
 
 And here is the same code yet again but with line numbers:
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
+{% highlight lua linenos %}
+local function foo(x)
+  return x + 5
+end
 foo(3)
 {% endhighlight %}
 
