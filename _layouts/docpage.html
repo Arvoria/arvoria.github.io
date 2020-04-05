@@ -16,16 +16,7 @@ layout: base
           $('navgoco').navgoco();
         });
       </script>
-      {:toc}
-      <ul class="nav" id="navgoco">}
-        <li><a href="#">1. Menu</a>
-          <ul>
-            <li><a href="#">1.1 Submenu</a></li>
-            <li><a href="#">1.2 Submenu</a></li>
-            <li><a href="#">1.3 Submenu</a></li>
-          </ul>
-        </li>
-      <!-- etc... -->
+      <ul class="nav" id="navgoco">
       </ul>
     </div>
     <div class="col-lg-8 col-md-9">
@@ -70,4 +61,38 @@ layout: base
         headings[i].innerText +
       '</a>';
   }
+
+  headings = document.querySelectorAll("h1[id],h2[id]");
+  var navgoco = document.querySelector("#navgoco");
+  var menuContents = '';
+
+  var lastDepth = undefined;
+  var depth = 1;
+
+  for (var i = 0; i < headings.length; i++) {
+    if (headings[i].nodeName == "H1") {
+      depth = 1;
+
+      // Previous heading was a H2, end the H1 superheader
+      if (lastDepth !== undefined && lastDepth > depth) {
+        menuContents += '</ul>';
+        menuContents += '</li>';
+      }
+
+      // Begin the H1 header in TOC
+      menuContents += '<li>';
+      menuContents += '<a href="#' + headings[i].id + '">' + headings[i].innerText + '</a>';
+      menuContents += '<ul>';
+      
+    } else if (headings[i].nodeName == "H2") {
+      depth = 2;
+      menuContents += '<li>';
+      menuContents += '<a href="#' + headings[i].id + '">' + headings[i].innerText + '</a>';
+      menuContents += '</li>';
+    }
+    
+    lastDepth = depth;
+  }
+
+  navgoco.innerHTML = menuContents;
 </script>
